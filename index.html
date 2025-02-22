@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">  <!--Sprache auf Deutsch, sonst möchte Google alles auf english übersetzen -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/assets.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="script.js">
+
+    <script src="./scripts/templates.js"> </script>
+    <script src="./script.js"> </script>
+    <script src="scripts/">  </script>
+</head>
+<body onload = "renderNotes()">
+
+    <h1>Notizblock </h1>
+
+    <input id="note_input" type="text" >
+    <input id="title_input" type="text" >
+    <button onclick="addNote()" > add note </button>
+
+    <h2>Notes</h2>
+    <div class="container" id="content">    
+    </div>
+
+    <h2>Archive</h2>
+    <div class="container" id="archive_content"> </div>
+    
+    <h2>Trash</h2>
+    <div class="container" id="trash_content">  
+    </div>
+    
+</body>
+</html>
