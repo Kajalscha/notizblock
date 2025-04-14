@@ -12,6 +12,16 @@ let trashNotes = [];
 let archiveNotesTitles = [];
 let archiveNotes = [];
 
+
+let allNotes = {
+    'notesTitles': ['Ba','Aufgabe'],
+    'notes': ['banana','rasen mähen'],
+    'archivNotesTitles': [],
+    'archivNotes': [],
+    'trashNotesTitles': [],
+    'trashNotes': []
+}
+
 //Notes
 function renderNotes(){
     let contentRef = document.getElementById('content');
