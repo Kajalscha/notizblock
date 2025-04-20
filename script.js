@@ -28,9 +28,7 @@ function renderNotes(){
     contentRef.innerHTML = "";
     
     for (let indexNotes = 0; indexNotes < notes.length; indexNotes++) {
-       // const note = notes [indexNotes];
         contentRef.innerHTML += getNoteTemplate(indexNotes);   
-      
     }
 }
 
@@ -82,11 +80,15 @@ function getTrashNoteTemplate(indexTrashNote){
 function addNote(){
     let noteInputRef = document.getElementById('note_input');
     let noteInput = noteInputRef.value;
-
     notes.push(noteInput);
-     
+
+    let titleInputRef = document.getElementById('title_input');
+    let titleInput = titleInputRef.value;
+    notesTitles.push(titleInput);
+
     renderNotes();
     noteInputRef.value = "";
+    titleInputRef.value ="";
 }
 
 //Move To Back Note
@@ -154,8 +156,9 @@ function deleteNote(indexTrashNotes){
    }
 
 
+   // Safe to Local storage 
 
-
+ 
    
 
 
